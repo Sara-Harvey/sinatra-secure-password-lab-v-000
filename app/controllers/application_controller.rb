@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
     end
   
     user = User.new(:username => params[:username], :password => params[:password])
+    if user.save 
   
 
   get '/account' do
