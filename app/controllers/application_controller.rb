@@ -43,7 +43,8 @@ class ApplicationController < Sinatra::Base
     user = User.find_by(:username => params[:username])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id 
-      redirect to 
+      redirect to '/account'
+      
   end
 
   get "/failure" do
