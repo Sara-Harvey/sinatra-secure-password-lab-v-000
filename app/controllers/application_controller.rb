@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    user = 
+    user = User.find_by 
   end
 
   get "/failure" do
