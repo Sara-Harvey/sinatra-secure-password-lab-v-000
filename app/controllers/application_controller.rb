@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
       redirect to '/failure'
     end
   
-    user = @
+    user = User.new()
   
 
   get '/account' do
