@@ -19,7 +19,10 @@ class ApplicationController < Sinatra::Base
   post "/signup" do
     if params[:username].empty? || params[:password].empty?
       redirect to '/failure'
-  end
+    end
+  
+    user = @
+  
 
   get '/account' do
     @user = User.find(session[:user_id])
